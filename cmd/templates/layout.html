@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{.Title}}</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    </head>
+    <body>
+        <style>
+            body {
+                margin: 0;
+                padding: 20px;
+                font-family: 'Roboto Mono', sans-serif;
+                font-size: 14px;
+                color: #383838;
+            }
+            a {
+                color: #4a90e2;
+            }
+            #initial-state {
+                margin-bottom: 40px;
+            }
+
+            #solution .state {
+                width: 200px;
+                display: inline-block;
+                margin: 0 20px 20px 0;
+            }
+        </style>
+        <h1>{{.Title}}</h1>
+        <div id="initial-state">
+            <p>Initial State:</p>
+            {{.InitialState}}
+        </div>
+        <div id="solution">
+            {{.Solution}}
+        </div>
+    </body>
+</html>
